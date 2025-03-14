@@ -1,3 +1,4 @@
 # html-css
  Meu primeiro repositorio
-Curso em vídeo
+ Curso em vídeo
+ Estou aprendendo a gerencia meu repositorio
