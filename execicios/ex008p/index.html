@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formataçãoes</title>
+</head>
+<body>
+    <h1>Outras formataçãoes</h1>
+    <h2>Código-fonte e Pré-formatação</h2>
+    <p>O codigo <code>window.document.getElementById('text')</code> é escrito em linguagem javaScript. </p> <!--Isso é uma fonte mono espaçada. Ela e otima para ler codigos por isso o nome code.-->
+    <pre> <!--Essa tag deixa tudo na mesma endentação.-->
+        <code>
+function fatorial(n){
+    if(n == 1){
+        return 1;
+    }else{
+        return n * fatorial(n - 1);
+    }
+}
+console.log(fatorial(5));
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p> <!--Essa tag deixa o texto entre aspas. É uma tag de citação.-->
+    <h2>Citações completas</h2>
+    <p>Segundo jeff said, no seu livro HTML para leigos:</p>
+<blockquote cite="http://www.livros.com.br"> <!--Essa tag é para citações completas.-->
+    A diferença entre o HTML e o XHTML é que o XHTML é mais rigoroso.
+</blockquote>
+<h2>Abreviações</h2>
+<p>Estou estudando <abbr title="Hypertext Markup Language">HTML </abbr>e <abbr title="Cascading Style Sheet">CSS</abbr>. Estou amando!</p>
+<h2>Texto invertido</h2>
+<p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+</body>
+</html>

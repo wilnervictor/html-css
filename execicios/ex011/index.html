@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes.</p>
+    
+    <!-- Tag <picture> para manipular imagens responsivas -->
+    <picture>
+        <!-- Define a imagem a ser usada quando a largura máxima da tela for 750px -->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- Define a imagem a ser usada quando a largura máxima da tela for 1050px -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <!-- Imagem padrão a ser exibida se nenhuma das condições acima for atendida -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio em HTML 5.</p>
+    
+    <!-- Tag <audio> para reproduzir áudio com controles -->
+    <audio src="midia/Calvin_Harris_Outside_ft_Ellie_Goulding_slowed_reverb_TWAPqCbPfiU.mp3" controls></audio>
+    
+    <!-- Outra tag <audio> com preload de metadados e controles -->
+    <audio preload="metadata" controls>
+        <!-- Fonte do áudio em formato MP3 -->
+        <source src="midia/Calvin_Harris_Outside_ft_Ellie_Goulding_slowed_reverb_TWAPqCbPfiU.mp3" type="audio/mpeg">
+        <!-- Mensagem a ser exibida se o navegador não suportar a reprodução de áudio -->
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. 
+           <a href="midia/Calvin_Harris_Outside_ft_Ellie_Goulding_slowed_reverb_TWAPqCbPfiU.mp3" download="Calvin_Harris_Outside_ft_Ellie_Goulding_slowed_reverb_TWAPqCbPfiU.mp3">Clique aqui para baixar o áudio.</a>
+        </p> <!-- Formatos mp3 wav ogg -->
+    </audio>
+</body>
+</html>

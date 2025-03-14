@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            background-color: #000000;
+            color: rgb(250, 251, 252);
+            text-align: center;
+        }
+        img {
+            width: 200px; /* Largura inicial das imagens */
+            transition: width 0.6s ease-in-out; /* Define a transição uma vez para todas as imagens */
+        }
+    </style>
+</head>
+<body>
+    <h1>Videos legais para assistir</h1>
+    <a href="pagina hardw/index.html" target="_self" rel="next">
+        <img id="primeira" onmouseenter="entro1()" onmouseout="sar1()" src="imagem/thumb-hardware.png" alt="hardware">
+    </a>
+    <a href="pagina html/index.html" target="_self" rel="next">
+        <img id="segunda" onmouseenter="entro2()" onmouseout="sar2()" src="imagem/thumb-html.png" alt="html">
+    </a>
+    <br>
+    <a href="pagina js/index.html" target="_self" rel="next">
+        <img id="terceira" onmouseenter="entro3()" onmouseout="sar3()" src="imagem/thumb-js.png" alt="javascript">
+    </a>
+    <a href="pagina python/index.html" target="_self" rel="next">
+        <img id="quarta" onmouseenter="entro4()" onmouseout="sar4()" src="imagem/thumb-python.png" alt="python">
+    </a>
+    <script src="js/logico.js"></script>
+</body>
+</html>

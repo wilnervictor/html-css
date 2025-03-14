@@ -1,0 +1,39 @@
+@charset "UTF-8"; /* Define a codificação de caracteres do arquivo CSS */
+
+/* Aplica a todas as tags */
+* {
+    font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes para todo o documento */
+    /*height: 100%;*/ /* Comentado: Define a altura de todos os elementos como 100% */
+}
+
+body {
+    background-image: linear-gradient(45deg, #0FC2C0, #0CABA8); /* Define um fundo com gradiente linear de 45 graus */
+    height: 100vh; /* Define a altura do corpo da página como 100% da altura da janela de visualização */
+    background-attachment: fixed;
+}
+
+main {
+    background-color: aliceblue; /* Define a cor de fundo do elemento principal */
+    border-radius: 15px; /* Define bordas arredondadas com raio de 15px */
+    box-shadow: 5px 5px 15px #023535; /* Adiciona uma sombra ao redor do elemento */
+    width: 600px; /* Define a largura do elemento principal */
+    padding: 10px; /* Adiciona um preenchimento interno de 10px ao redor do conteúdo */
+    margin: auto; /* Centraliza o elemento principal horizontalmente */
+}
+
+h1 {
+    color: #015958; /* Define a cor do texto do cabeçalho h1 */
+    text-align: center; /* Centraliza o texto do cabeçalho h1 */
+    text-shadow: 1px 1px 2px #013130b6; /* Adiciona uma sombra ao texto do cabeçalho h1 */
+}
+
+h2 {
+    color: #008F8C; /* Define a cor do texto do cabeçalho h2 */
+}
+
+p {
+    text-align: justify; /* Justifica o texto dos parágrafos */
+}
+dt{
+    color: #008F8C; /* Define a cor do texto do cabeçalho h2 */
+}
