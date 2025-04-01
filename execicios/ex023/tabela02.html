@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        th, td{
+            border: 1px solid black;
+            text-align: left;
+            padding: 5px;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+    </style>
+    <title>Tabelas sematicas</title>
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+    <!--
+    Anatomia para tabelas grandes:
+    TABLE
+      THEAD
+         TR, TD, TH
+        TBDDY
+          TR, TD, TH
+         TFOOT
+           TR, TD, TH
+    -->
+   <table>
+    <thead>
+       <tr>
+        <th>Estado</th>
+        <th>População</th>
+       </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td>45.919.049</td>
+        </tr>
+        <tr>
+            <td>Pernambuco</td>
+            <td> 9.058.931 </td>
+        </tr>
+    </tbody>
+    <tfoot>
+       <tr>
+        <th>Total de Habitantes</th>
+        <td>54.977.980</td>
+       </tr>
+    </tfoot>
+   </table>
+</body>
+</html>
