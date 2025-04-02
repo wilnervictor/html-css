@@ -20,6 +20,16 @@
             background-color: grey;
             color: white;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: rgba(128, 128, 128, 0.199);
+            padding: 5px;
+        }
+        tbody >tr:nth-child(2n-1){
+            background-color: rgba(128, 128, 128, 0.308);
+        }
+
     </style>
     <title>Tabelas sematicas</title>
 </head>
@@ -28,6 +38,7 @@
     <!--
     Anatomia para tabelas grandes:
     TABLE
+        CAPTION
       THEAD
          TR, TD, TH
         TBDDY
@@ -36,10 +47,13 @@
            TR, TD, TH
     -->
    <table>
+    <caption>
+        População das unidades federativas
+    </caption>
     <thead>
        <tr>
-        <th>Estado</th>
-        <th>População</th>
+        <th scope="col">Estado</th> <!--Isso serve para os mecanisos de busca saber onde a coluda ta ou se ta na mesma linha col é mesma coluna-->
+        <th scope="col" style="width: 50px;">População</th>
        </tr>
     </thead>
     <tbody>
@@ -51,11 +65,35 @@
             <td>Pernambuco</td>
             <td> 9.058.931 </td>
         </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td>21 322 691</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td>17 219 679</td>
+        </tr>
+        <tr>
+            <td>Bahia</td>
+            <td>14 850 513</td>
+        </tr>
+        <tr>
+            <td>Paraná</td>
+            <td>11 824 665</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td>11 229 915</td>
+        </tr>
+        <tr>
+            <td>Ceará</td>
+            <td>9 233 656</td>
+        </tr>
     </tbody>
     <tfoot>
        <tr>
-        <th>Total de Habitantes</th>
-        <td>54.977.980</td>
+        <th scope="row">Total de Habitantes</th> <!--Scope row diz que os dados em questao estão na mesma linha e não na mesma coluna-->
+        <td>140.659.099</td>
        </tr>
     </tfoot>
    </table>
