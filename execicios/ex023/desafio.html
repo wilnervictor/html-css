@@ -20,6 +20,20 @@
             margin-bottom: 20px;
             
         }
+        #tabela3{
+            width: 450px;
+            margin-top: 30px;
+        }
+        caption{
+            background-color: rgba(128, 128, 128, 0.5);
+            padding: 5px;
+        }
+        table tr:nth-child(2n){
+            background-color: grey;
+        }
+        th{
+            background-color: white;
+        }
     </style>
 </head>
 <body>
@@ -82,6 +96,54 @@
             <td colspan="4">n</td>
         </tr>
     </table>
-   
+    
+   <table id="tabela3">
+    <caption>
+        Filmes favoritos
+    </caption>
+    <tr>
+        <th>Grupos</th>
+        <th>Nomes</th>
+        <th colspan="3">Filmes</th>
+    </tr>
+    <tr>
+        <th rowspan="3">Mulheres</th>
+        <td>Ana Maria Santos</td>
+        <td>Alien</td>
+        <td>Rambo</td>
+        <td>Vingadores</td>
+    </tr>
+    <tr>
+        <td>Beatriz Souza</td>
+        <td>Hulk</td>
+        <td>Inception</td>
+        <td>Batman</td>
+    </tr>
+    <tr>
+        <td>Cláudia Melo</td>
+        <td>Oblivion</td>
+        <td>Matrix</td>
+        <td>Big Hero</td>
+    </tr>
+    <tr>
+        <th rowspan="3">Homens</th>
+        <td>Bruno Mendonça</td>
+        <td>Intocáveis</td>
+        <td>Amnésia</td>
+        <td>Gladiador</td>
+    </tr>
+    <tr>
+        <td>Daniel Lourenço</td>
+        <td>Wall-E</td>
+        <td>Oldboy</td>
+        <td>Dangal</td>
+    </tr>
+    <tr>
+        <td>Fabiano Mota</td>
+        <td>Star Wars 5</td>
+        <td>Taxi Driver</td>
+        <td>Toy Story</td>
+    </tr>
+   </table>
 </body>
 </html>
