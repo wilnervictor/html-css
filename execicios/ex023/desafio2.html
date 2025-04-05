@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 6px;
+        }
+        .centrali{
+            text-align: center;
+        }
+        .centrali1{
+            text-align: center;
+            background-color: grey;
+            color: white;
+        }
+        thead{
+            background-color: grey;
+            color: white;
+        }
+        .centrod{
+            padding-left: 10px;
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Diciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="rowgroup" rowspan="4">Exatas</th>
+            <td>Matemática</td>
+            <td class="centrali">0.0</td>
+            <td class="centrali">0.0</td>
+            <td class="centrali">0.0</td>
+          </tr>
+          <tr>
+            <td>Fisica</td>
+            <td class="centrali">0.0</td>
+            <td class="centrali">0.0</td>
+            <td class="centrali">0.0</td>
+          </tr>
+          <tr>
+            <td>Química</td>
+            <td class="centrali">0.0</td>
+            <td class="centrali">0.0</td>
+            <td class="centrali">0.0</td>
+          </tr>
+          <tr>
+            <td>Biologia</td>
+            <td class="centrali">0.0</td>
+            <td class="centrali">0.0</td>
+            <td class="centrali">0.0</td>
+          </tr>
+          <tr>
+            <td class="centrod" colspan="4">Medías de exatas</td>
+            <td class="centrali1">0.0</td>
+          </tr>
+          <tr>
+            <th scope="rowgroup" rowspan="2">Humanas</th>
+            <td>Historia</td>
+            <td class="centrali">0.0</td>
+            <td class="centrali">0.0</td>
+            <td class="centrali">0.0</td>
+          </tr>
+          <tr>
+            <td>Geografia</td>
+            <td class="centrali">0.0</td>
+            <td class="centrali">0.0</td>
+            <td class="centrali">0.0</td>
+          </tr>
+          <tr>
+            <td class="centrod" colspan="4">Medías de Humanas</td>
+            <td class="centrali1">0.0</td>
+          </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" class="centrod" colspan="4">Total</th>
+                <td class="centrali1">0.0</td>
+              </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
