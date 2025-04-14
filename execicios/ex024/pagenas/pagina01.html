@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        @charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(45deg, #220309, #A40F2D);
+    background-attachment: fixed;
+}
+main{
+    width: 300px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.815);
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+main h1{
+    text-align: center;
+}
+main input{
+    padding: 8px;
+    width: 278px;
+    text-align: right;
+    font-size: 1.5em;
+}
+table{
+    width: 300px;
+    height: 350px;
+    padding-top: 5px;
+}
+tr, td{
+    border: 0px solid black;
+    background-color: #1F1F1F;
+    text-align: center;
+}
+td:active{
+background-color: black;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <input type="text" name="text1" id="text1">
+        <table>
+            <tr>
+                <td onclick="limpar()">C</td>
+                <td onclick="limparant()">&lt;</td>
+                <td onclick="nd()">/</td>
+                <td onclick="nx()">X</td>
+            </tr>
+            <tr>
+                <td onclick="n7()">7</td>
+                <td onclick="n8()">8</td>
+                <td onclick="n9()">9</td>
+                <td onclick="ntraco()">-</td>
+            </tr>
+            <tr>
+                <td onclick="n4()">4</td>
+                <td onclick="n5()">5</td>
+                <td onclick="n6()">6</td>
+                <td onclick="nmais()">+</td>
+            </tr>
+            <tr>
+                <td onclick="n1()">1</td>
+                <td onclick="n2()">2</td>
+                <td onclick="n3()">3</td>
+                <td rowspan="2" onclick="resultado()">=</td>
+            </tr>
+            <tr>
+                <td colspan="2" onclick="n0()">0</td>
+                <td onclick=" nponto()">.</td>
+            </tr>
+        </table>
+    </main>
+    <script>
+        function n1(){
+    document.getElementById('text1').value += "1"
+}
+function n2(){
+    document.getElementById('text1').value += "2"
+}
+function n3(){
+    document.getElementById('text1').value += "3"
+}
+function n4(){
+    document.getElementById('text1').value += "4"
+}
+function n5(){
+    document.getElementById('text1').value += "5"
+}
+function n6(){
+    document.getElementById('text1').value += "6"
+}
+function n7(){
+    document.getElementById('text1').value += "7"
+}
+function n8(){
+    document.getElementById('text1').value += "8"
+}
+function n9(){
+    document.getElementById('text1').value += "9"
+}
+function n0(){
+    document.getElementById('text1').value += "0"
+}
+function limpar(){
+    window.document.getElementById('text1').value = ""
+}
+function nd(){
+    document.getElementById('text1').value += "/"
+}
+function nx(){
+    document.getElementById('text1').value += "*"
+}
+function ntraco(){
+    document.getElementById('text1').value += "-"
+}
+function nmais(){
+    document.getElementById('text1').value += "+"
+}
+function nponto(){
+    document.getElementById('text1').value += "."
+}
+function limparant(){
+    let lim = window.document.getElementById('text1')
+   lim.value = lim.value.slice(0,-1)
+}
+function resultado() {
+    let res = document.getElementById('text1').value;
+
+    try {
+      let total = eval(res); // Ex: 2+3*4
+      document.getElementById('text1').value = total;
+    } catch (erro) {
+      document.getElementById('text1').value = 'Erro';
+    }
+  }
+  
+    </script>
+</body>
+</html>
