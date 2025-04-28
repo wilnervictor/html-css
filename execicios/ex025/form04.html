@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="pacote.js" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="inom" id="inome" required minlength="5" maxlength="20" autocomplete="name">
+        </p>
+      <p>
+        <label for="imail">E-mail</label>
+        <input type="email" name="email" id="imail" required placeholder="exemplodeemail20@gmail.com" size="30" autocomplete="email">
+      </p>
+      <p>
+        <label for="itell">Telefone</label>
+         <input type="tel" name="tell" id="itell" autocomplete="tel" required pattern="^\(\d{2}\)\[0-9]{4}-[0-9]{4}$">
+         <!--HTML5 telefone pattern-->
+      </p>
+    </fieldset>
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </p>
+    </form>
+</body>
+</html>
