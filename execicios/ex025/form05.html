@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="pacote.js" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="isex" id="isexo" checked value="M"> <label for="isexo">Masculino</label> <br>
+            <input type="radio" name="isex" id="isexof" value="F"> <label for="isexof">Feminino</label>
+        </fieldset>
+       <fieldset>
+        <legend>Exportes favoritos</legend>
+        <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label> <br>
+        <input type="checkbox" name="ebas" id="ibas"> <label for="ibas">Basquete </label><br>
+        <input type="checkbox" name="ekara" id="ikara"> <label for="ikara">Karatê</label> <br>
+        <input type="checkbox" name="ejiu" id="ijiu"> <label for="ijiu">Jiu Jitsu</label>
+       </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
