@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1>Exemplo de formulario</h1>
+    <form action="" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="estado" id="iest">
+                <optgroup label="Região Nordeste">
+                    <option value="PE">Pernambuco</option>
+                    <option value="MG">Mina Gerais</option>
+                    <option value="AL" selected>Alagos</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profição:</label>
+            <input type="text" name="prof" id="iprof" list="sltprof">
+            <datalist id="sltprof">
+                <option value="ADM">Adminitrador</option>
+                <option value="PRO">Programação</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem aqui.."></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
