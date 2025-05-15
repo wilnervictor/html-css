@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Numeros</h1>
+    <form action="pacote.js" method="get">
+        <p>
+            <label for="inumero">Número:</label>
+            <input type="range" name="numero" id="inumero" min="0" max="20" value="10" oninput="ival.innerHTML = Number(inumero.value)">
+            <output id="ival">20</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
