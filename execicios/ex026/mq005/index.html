@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Resposivo</title>
 </head>
 <body>
     
+    <footer>
+        <h1>Meu site</h1>
+        <div id="menu4"><a href="#">Opçâo 1</a> <a href="#">Opçâo 2</a> <a href="#">Opçâo 3</a> <a href="#">Opçâo 4</a> <a href="#">Opçâo 5</a> <a href="#">Opçâo 6</a></div>
+        <nav>
+            <p id="menu3" onclick="menu()">&#8801;</p>
+        </nav>
+
+        <div id="menu">
+               <div id="aa1"><a href="#">Opçâo 1</a></div>
+               <div id="aa2"><a href="#">Opçâo 2</a></div>
+               <div id="aa3"><a href="#">Opçâo 3</a></div>
+               <div id="aa4"><a href="#">Opçâo 4</a></div>
+               <div id="aa5"><a href="#">Opçâo 5</a></div>
+               <div id="aa6"><a href="#">Opçâo 6</a></div>
+            </div>
+    </footer>
+    <main>
+        <h1>Testando Media Queries</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non molestiae consequatur eveniet eligendi illo iste magni id? Saepe sapiente perferendis velit cum eligendi. Amet odit delectus rem aperiam quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, consectetur, distinctio magnam cumque rem perferendis consequuntur voluptas fugiat eos sapiente dignissimos exercitationem laudantium magni libero ipsam quas id quaerat quam!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus nemo aut quas, sint odit corporis dolorum impedit quos quisquam atque quasi vero ratione asperiores minima eaque, iste maiores fuga eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vero repellat quod consequuntur corporis reiciendis provident nam. Impedit, inventore perferendis, perspiciatis facere explicabo quae cumque obcaecati quam voluptatibus eius accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nesciunt corporis distinctio vel fugit suscipit iusto voluptatem cupiditate praesentium, quis tempore dolor enim a laborum animi harum nulla modi! Quos! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae magnam, deleniti sequi necessitatibus hic eveniet fugit quidem nemo. Doloremque in fugit quod asperiores eum, voluptatibus impedit dignissimos dolor quae hic.</p>
+    </main>
+ <script>
+    function menu(){
+       const a = document.querySelector('#menu');
+        if(a.style.display ==='none'){
+         a.style.display = 'block';
+        } else {
+            a.style.display = 'none';
+        }
+    }
+ </script>
 </body>
 </html>
