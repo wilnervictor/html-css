@@ -63,14 +63,14 @@ main p {
     footer > a {
     display: block;
 }
+#menu{
+    display: none;
+}
 #menu4 a{
  background-color: rgba(0, 0, 0, 0.411);
   margin: 1px;
   padding: 5px;
 } 
-#menu a:hover{
-    background-color: rgba(0, 0, 0, 0.596);
-}
 #menu4{
     background-color: #6E6766;
     padding-bottom: 5px;
@@ -79,6 +79,67 @@ main p {
     display: block;
 }
 main{
-    width: 850px;
+    width: 750px;
+}
+#a1:hover, #a2:hover, #a3:hover, #a4:hover, #a5:hover, #a6:hover{
+    background-color: black;
+}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*Dasktop*/
+      footer p{
+        display: none;
+    }
+    footer > a {
+    display: block;
+}
+#menu{
+    display: none;
+}
+#menu4 a{
+ background-color: rgba(0, 0, 0, 0.411);
+  margin: 1px;
+  padding: 5px;
+} 
+#menu4{
+    background-color: #6E6766;
+    padding-bottom: 5px;
+}
+#menu4{
+    display: block;
+}
+main{
+    width: 800px;
+}
+#a1:hover, #a2:hover, #a3:hover, #a4:hover, #a5:hover, #a6:hover{
+    background-color: black;
+}
+}
+@media screen and (min-width: 1200px) { /*Telas grandes*/
+     footer p{
+        display: none;
+    }
+    footer > a {
+    display: block;
+}
+#menu{
+    display: none;
+}
+#menu4 a{
+ background-color: rgba(0, 0, 0, 0.411);
+  margin: 1px;
+  padding: 5px;
+} 
+#menu4{
+    background-color: #6E6766;
+    padding-bottom: 5px;
+}
+#menu4{
+    display: block;
+}
+main{
+    width: 800px;
+}
+#a1:hover, #a2:hover, #a3:hover, #a4:hover, #a5:hover, #a6:hover{
+    background-color: black;
 }
 }
