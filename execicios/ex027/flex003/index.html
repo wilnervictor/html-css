@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexible Box</title>
+    <style>
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+        .container{
+         background-color: lightsalmon;
+         display: flex;
+         width: 100vw;
+         /*flex-direction: row;
+         flex-wrap: wrap; isso tudo e resumido por flex-flow*/
+         flex-flow: row wrap
+        }
+        .item{
+        background-color: aqua;
+        text-align: center;
+        border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="item">Exemplo de bloco a</div>
+      <div class="item">Exemplo de bloco b</div>
+      <div class="item">Exemplo de bloco c</div>
+      <div class="item">Exemplo de bloco d</div>
+      <div class="item">Exemplo de bloco e</div>
+      <div class="item">Exemplo de bloco f</div>
+      <div class="item">Exemplo de bloco g</div>
+    </section>
+  </body>
+</html>
